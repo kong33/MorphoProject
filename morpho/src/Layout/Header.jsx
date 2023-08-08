@@ -5,6 +5,7 @@ const Header = () =>{
         <header>
               <h1 class="logo">MORPHO</h1>
         </header>
+        
     )
 }
 export default Header;
