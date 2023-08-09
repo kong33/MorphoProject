@@ -1,7 +1,11 @@
 import React from 'react';
-const HomeContents = () =>{
-    return (
-        <h1>home contents</h1>
+import Contents from '../component/Contents';
+import Category from '../component/Catetgory';
+const HomeContents = () => {
+    return (<div>
+        <Category/>
+        <Contents/>
+            </div>
     );
 
 }
