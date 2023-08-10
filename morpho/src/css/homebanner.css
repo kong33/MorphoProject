@@ -1,6 +1,6 @@
 .banner1{
     position: relative;
-    top:-250px; /*여기 반응형으로 고쳐야 함*/
+    top:-400px; /*여기 반응형으로 고쳐야 함*/
     transform:rotate(90deg);
     width:100%;
 }

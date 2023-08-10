@@ -1,6 +1,6 @@
 import React from 'react';
-import Contents from '../component/Contents';
-import Category from '../component/Catetgory';
+import Contents from './Contents';
+import Category from './Catetgory';
 const HomeContents = () => {
     return (<div>
         <Category/>
