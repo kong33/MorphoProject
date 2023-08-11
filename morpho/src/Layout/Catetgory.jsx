@@ -27,6 +27,7 @@ const Category = () => {
           </li>
         ))}
       </ul>
+      
       <div className="detailMenu">
         {menuLst.map((v, idx) => (
           <ul
