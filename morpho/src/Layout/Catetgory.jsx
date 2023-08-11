@@ -1,43 +1,47 @@
 import React, { useState } from "react";
 import style from "../css/category.css";
+
 const Category = () => {
-  const menuLst = ["menu1", "menu2", "menu3", "menu4", "menu5"];
-  const [hide, setHide] = useState({
-    menu1: false,
-    menu2: false,
-    menu3: false,
-    menu4: false,
-    menu5: false,
-  });
-  const mouseEvent = (menuName, bool) => {
-    const change = { ...hide };
-    change[menuName] = bool;
+  const menuData = [
+    { name: "Product", subMenus: ["Front Panels", "Enclosures", "Milled parts", "Signs"] },
+    { name: "Inspiration", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
+    { name: "PRICES & SERVICE", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
+    { name: "메뉴3", subMenus: ["서브메뉴3-1", "서브메뉴3-2", "서브메뉴3-3", "서브메뉴3-4"] },
+    // ... 이하 생략 ...
+  ];
+
+  const [hide, setHide] = useState(Array(menuData.length).fill(false));
+
+  const mouseEvent = (index, bool) => {
+    const change = [...hide];
+    change[index] = bool;
     setHide(change);
   };
+
   return (
     <nav className="nav">
       <ul className="navContainer">
-        {menuLst.map((v, idx) => (
+        {menuData.map((menu, idx) => (
           <li
-            className={hide[v] ? "active" : "none"}
-            onMouseEnter={() => mouseEvent(v, true)}
-            onMouseLeave={() => mouseEvent(v, false)}
+            key={idx}
+            className={hide[idx] ? "active" : "none"}
+            onMouseEnter={() => mouseEvent(idx, true)}
+            onMouseLeave={() => mouseEvent(idx, false)}
           >
-            <p>{`메뉴${idx + 1}`}</p>
+            <p>{menu.name}</p>
           </li>
         ))}
       </ul>
-      
       <div className="detailMenu">
-        {menuLst.map((v, idx) => (
+        {menuData.map((menu, idx) => (
           <ul
-            onMouseEnter={() => mouseEvent(v, true)}
-            onMouseLeave={() => mouseEvent(v, false)}
+            key={idx}
+            onMouseEnter={() => mouseEvent(idx, true)}
+            onMouseLeave={() => mouseEvent(idx, false)}
           >
-            <li>{`메뉴${idx + 1}-${1}`}</li>
-            <li>{`메뉴${idx + 1}-${2}`}</li>
-            <li>{`메뉴${idx + 1}-${3}`}</li>
-            <li>{`메뉴${idx + 1}-${4}`}</li>
+            {menu.subMenus.map((subMenu, subIdx) => (
+              <li key={subIdx}>{subMenu}</li>
+            ))}
           </ul>
         ))}
       </div>
