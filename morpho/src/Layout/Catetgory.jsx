@@ -7,15 +7,14 @@ const Category = () => {
     { name: "Inspiration", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
     { name: "PRICES & SERVICE", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
     { name: "메뉴3", subMenus: ["서브메뉴3-1", "서브메뉴3-2", "서브메뉴3-3", "서브메뉴3-4"] },
-    // ... 이하 생략 ...
   ];
 
   const [hide, setHide] = useState(Array(menuData.length).fill(false));
 
-  const mouseEvent = (index, bool) => {
-    const change = [...hide];
-    change[index] = bool;
-    setHide(change);
+  const mouseEvent = (index, bool) => {//mouseEvent 함수는 menuName, bool 두 개의 파라미터를 받는다.
+    const change = [...hide];//change는 hide의 복사본
+    change[index] = bool;//change object 중 menuName과 같은 것이 있다면 bool로 바꾸기
+    setHide(change);//hide를 change로 수정
   };
 
   return (
