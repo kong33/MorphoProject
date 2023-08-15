@@ -1,0 +1,10 @@
+.slide{
+    width:30vw;
+    height: 40vh;
+    background-color: white;
+}
+
+.word{
+    color: black;
+    font-size: 5vw;
+}
