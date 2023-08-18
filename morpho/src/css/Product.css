@@ -1,0 +1,15 @@
+.firstBanner, .secondBanner {
+    width:30vw;
+    height:40vh;
+    background-color: beige;
+    box-shadow: 5vh 6vh 10vh rgba(0, 0,0,0.5);
+}
+
+.firstBanner{
+    position: relative;
+    top:80vh;
+}
+.secondBanner{
+    position: relative;
+    top:150vh;
+}

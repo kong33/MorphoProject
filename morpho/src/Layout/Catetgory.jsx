@@ -3,10 +3,10 @@ import style from "../css/category.css";
 
 const Category = () => {
   const menuData = [
-    { name: "Product", subMenus: ["Front Panels", "Enclosures", "Milled parts", "Signs"] },
-    { name: "Inspiration", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
-    { name: "PRICES & SERVICE", subMenus: ["서브메뉴2-1", "서브메뉴2-2", "서브메뉴2-3", "서브메뉴2-4"] },
-    { name: "메뉴3", subMenus: ["서브메뉴3-1", "서브메뉴3-2", "서브메뉴3-3", "서브메뉴3-4"] },
+    { name: "PRODUCT", subMenus: ["Wall Panel", "Aluminum box", "Manufacturing & Anodizing", "Paint & Marking"] },
+    { name: "INSPARATION", subMenus: ["Insparation"] },
+    { name: "PRICES & SERVICE", subMenus: ["Price", "Discount"] },
+    { name: "SUPPORT", subMenus: ["Q&A", "서브메뉴3-2", "서브메뉴3-3", "서브메뉴3-4"] },
   ];
 
   const [hide, setHide] = useState(Array(menuData.length).fill(false));
