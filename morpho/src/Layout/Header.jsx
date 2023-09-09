@@ -1,15 +1,22 @@
 import React from 'react';
 import { css } from '@emotion/react';
+
+
+
 const Header = () =>{
     return (
-        <header className =" header"
-            css={css`
-            margin:20vw;`
+        <header
+            css={css``
             }>
 
-            <h1 className="logo"
+            <h1 
                 css={css`
-                width:50%;`}
+                width:50%;
+                padding:50px;
+                position:absolute;
+                left:50px;
+
+           `}
                 >MORPHO
             </h1>
         </header>

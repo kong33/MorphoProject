@@ -8,6 +8,7 @@ const Slide =(props) => {
                 width:30vw;
                 height: 40vh;
                 background-color: white;
+                box-shadow: 5vw 6vh 10vh rgba(0, 0,0,0.5);
                 display:inline;
             `}
         >
