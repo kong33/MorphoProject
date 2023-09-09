@@ -1,7 +1,7 @@
 import React from 'react';
-import Slide from '../component/Slide';
-import Wallpanel from '../image/Wallpanel.jpg';
-import '../css/Product.css';
+import Slide from './Slide';
+import Wallpanel from '../../image/Wallpanel.jpg';
+
 const Product = () =>{
     return(<div className="Product">
 

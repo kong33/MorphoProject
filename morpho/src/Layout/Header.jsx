@@ -1,9 +1,17 @@
 import React from 'react';
-import '../css/Header.css';
+import { css } from '@emotion/react';
 const Header = () =>{
     return (
-        <header class =" header">
-              <h1 class="logo">MORPHO</h1>
+        <header className =" header"
+            css={css`
+            margin:20vw;`
+            }>
+
+            <h1 className="logo"
+                css={css`
+                width:50%;`}
+                >MORPHO
+            </h1>
         </header>
         
     )

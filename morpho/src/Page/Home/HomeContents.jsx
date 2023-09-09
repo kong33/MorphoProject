@@ -1,10 +1,10 @@
 import React from 'react';
-import Contents from './Contents';
+import MainBanner from './MainBanner';
 import Category from './Catetgory';
 const HomeContents = () => {
     return (<div>
         <Category/>
-        <Contents/>
+        <MainBanner/>
             </div>
     );
 

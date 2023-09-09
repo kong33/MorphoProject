@@ -1,8 +1,10 @@
 import React from 'react';
-import Layout from '../Layout/Layout';
-import HomeContents from '../Layout/HomeContents';
-import InfoSlide from '../component/InfoSlide';
+import Layout from '../../Layout/Layout';
+import HomeContents from './HomeContents';
+import InfoSlide from './InfoSlide';
 import Product from './Product';
+
+
 const Home = () => {
     return (<div>
             <Layout>

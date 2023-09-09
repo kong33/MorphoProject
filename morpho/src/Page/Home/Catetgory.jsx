@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "../css/category.css";
+import "../../css/category.css";
 
 const Category = () => {
   const menuData = [
