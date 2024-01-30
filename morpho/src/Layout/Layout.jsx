@@ -5,9 +5,7 @@ import { css } from '@emotion/react';
 
 const Layout =(props)=> {
     return(<div>
-    <Header 
-        css={css`
-                margin:10vw;`}/>
+    <Header/>
         <main>
          {props.children}
    

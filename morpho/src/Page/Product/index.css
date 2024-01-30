@@ -1,0 +1,33 @@
+.article {
+  padding: 5vw;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.wall {
+  background-color: #f6f1f1;
+}
+
+.wholeDiv {
+  position: relative;
+  top: 0px;
+  z-index: 5;
+  background-color: black;
+}
+
+.wallPanel {
+  background-color: #f6f1f1;
+}
+
+.aluminumBox {
+  background-color: #afd3e2;
+}
+
+.manufacturing {
+  background-color: #19a7ce;
+}
+
+.paintAndMarking {
+  background-color: #146c94;
+}

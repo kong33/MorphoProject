@@ -1,120 +1,118 @@
 .contents {
-    width: 100vw;
-    height: 30vh;
-    background-color: rgb(218, 184, 131);
-    position: absolute;
-    margin:0px;
-   
-
-  }
-
-.banner1{
-    position:absolute;
-    top:0vh;
-    left:50%;
-    transform: translate(-50%,-0%);
-    margin:0;
-    width:100%;
-    height:100%;
-  
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(139, 181, 216);
+  position: relative;
+  top: 1vh;
+  margin: 0px;
 }
-.banner1_1{
-  position:relative;
-  top:0vh;
-  left:0;
-  margin:0;
-  height:40vh;
-  width:100vw;
 
+.banner1 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  margin: 0;
+  width: 100vw;
+  height: 30vh;
 }
-  @keyframes slideInFromTop {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .word{
-    position: relative;
-    top:-40%;
-    left:45%;
-    color:white;
-    font-size:500%;
-    animation: slideInFromTop 0.5s ease-out; 
-  }
-  /*이 애니메이션이 스크롤 내리면 작동하도록 해야함*/
- 
-  .nav {
-    height: 80px;
-    overflow: hidden;
-    transition: 0.25s ease-in-out;
-  }
-  
-  .nav:hover {
-    height: 300px;
-    cursor: pointer;
-  }
-  
-  .nav .navContainer {
-    height: 80px;
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-  }
-  .nav .navContainer .active {
-    background-color: rgb(69, 128, 176);
-    color: white;
-  }
-  
-  .nav .navContainer .none {
-    background-color: none;
-  }
-  
-  .nav .navContainer li {
-    width: 200px;
-    height: 100%;
-    list-style-type: none;
-    font-size: 19px;
-    color: rgb(3, 51, 90);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.5s ease;
-  }
-  
-  .nav .navContainer li p {
-    margin: 0;
-  }
-  
-  .nav .detailMenu {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .nav .detailMenu ul {
-    width: 200px;
-    margin: auto;
-    justify-content: space-around;
-    padding: 0;
-  }
-  
-  .nav .detailMenu ul li {
-    list-style-type: none;
-    color: rgb(7, 7, 105);
-    font-weight: 600;
-    display: block;
-    text-align: center;
-    padding: 12px ;
-    
-  }
-  .nav .detailMenu ul li:hover{
-    cursor: pointer;
-    background-color: rgb(198, 220, 241);
-  }
+
+.banner1_1 {
+  position: relative;
+  top: 0vh;
+  left: 0;
+  margin: 0;
+  height: 50vh;
+  width: 100%;
+}
+
+.word {
+  position: relative;
+  top: -28vh;
+  left: 60vw;
+  color: white;
+  font-size: 5vw;
+  font-weight: 100;
+  animation: slideInFromTop 0.7s ease-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*이 애니메이션이 스크롤 내리면 작동하도록 해야함*/
+
+.nav {
+  position: relative;
+  top: 0;
+  height: 5em;
+  width: 100vw;
+  overflow: visible;
+  transition: 0.25s ease-in-out;
+}
+
+.nav:hover {
+  height: 30em;
+  cursor: pointer;
+}
+
+.nav .navContainer {
+  height: 5em;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  overflow: visible;
+}
+
+.nav .navContainer .active {
+  background-color: rgb(69, 128, 176);
+  color: white;
+}
+
+.nav .navContainer .none {
+  background-color: none;
+}
+
+.nav .navContainer li {
+  width: 20vw;
+  height: 100%;
+  list-style-type: none;
+  font-size: 1.5vw;
+  color: rgb(3, 51, 90);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav .detailMenu {
+  display: flex;
+  overflow: visible;
+}
+
+.nav .detailMenu ul {
+  width: 20vw;
+  margin: auto;
+  justify-content: space-around;
+  padding: 0;
+  text-align: center;
+}
+
+.nav .detailMenu ul li {
+  list-style-type: none;
+  color: rgb(7, 7, 105);
+  font-weight: 600;
+  display: block;
+  padding: 1.3em;
+  height: 2em;
+  font-size: 0.9vw;
+}
+
+.nav .detailMenu ul li:hover {
+  cursor: pointer;
+  background-color: rgb(198, 220, 241);
+}
